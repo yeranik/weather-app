@@ -56,6 +56,10 @@ footer {
   color: blueviolet;
 }
 
+.weatherDescription {
+  color: white;
+}
+
 .gitLink {
   text-decoration: none;
   cursor: pointer;

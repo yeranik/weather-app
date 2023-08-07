@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App SheCodes</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>WeatherApp</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,11 +25,17 @@
           <h4>DATE</h4>
           <br />
 
-          <h1>CITY<br />🌤</h1>
+          <h1>CITY</h1>
+          <div class="forecast-image">
+            <img src="images/sunweather.svg" alt="" width="80px" />
+          </div>
 
           <br />
-          <h2>C° / <strong>F°</strong></h2>
-          <form>
+          <h2 id="temp">Temp</h2>
+          <div class="weatherDescription" id="des">
+            <small> Weather description </small>
+          </div>
+          <form id="search-form">
             <div class="d-flex justify-content-center">
               <div class="d-inline-flex p-2">
                 <input
@@ -42,8 +49,7 @@
                 <input
                   class="btn btn-primary btn-sm"
                   type="submit"
-                  value="Search"
-                  id="search-form"
+                  value="search"
                 />
               </div>
             </div>
@@ -99,23 +105,24 @@
     </div>
     <footer>
       <a
-          class="gitLink"
-          href="https://github.com/yeranik/weather-app"
-          target="_blank"
-        >
-      Open-source code,
-      <span>
+        class="gitLink"
+        href="https://github.com/yeranik/weather-app"
+        target="_blank"
+      >
+        Open-source code,
+        <span>
+          by
+          <a
+            class="Instagram"
+            href="https://www.instagram.com/yerani_k/?hl=es-la"
+            target="_blank"
+          >
+            <strong>Yerani Kingston</strong></a
+          >
+        </span>
+
+        <script src="src/script.js"></script>
       </a>
-        by
-        <a
-          class="Instagram"
-          href="https://www.instagram.com/yerani_k/?hl=es-la"
-          target="_blank"
-        >
-          <strong>Yerani Kingston</strong></a
-        >
-      </span>
     </footer>
-    <script src="src/script.js"></script>
   </body>
 </html>
