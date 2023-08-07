@@ -1,0 +1,57 @@
+h4 {
+  font-size: medium;
+  text-align: center;
+  position: relative;
+  display: block;
+  color: white;
+}
+h1,
+h2 {
+  font-size: large;
+  text-align: center;
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 34px;
+  line-height: 48px;
+  margin: 0;
+}
+
+form {
+}
+
+footer {
+  font-size: x-small;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+.container {
+  padding: 40px;
+  display: block;
+}
+.color-blue {
+  background-color: #1a64d6;
+  text-align: center;
+  display: block;
+  padding: 15px 30px;
+  font-weight: bold;
+}
+.color-white {
+  background-color: white;
+  text-align: center;
+  display: block;
+  padding: 15px 30px;
+  font-weight: bold;
+}
+
+.Instagram {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  color: black;
+}
+.Instagram:hover {
+  text-decoration: underline;
+  color: blueviolet;
+}
