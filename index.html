@@ -31,9 +31,14 @@
           </div>
 
           <br />
-          <h2 id="temp">Temp</h2>
+          <div class="temperature" id="temp">Temp</div>
+          <div class="units">
+            <a href="#" id="celsius-Link" class="active">C°</a>|
+            <a href="#" id="farenheit-link">F°</a>
+          </div>
+
           <div class="weatherDescription" id="des">
-            <small> Weather description </small>
+            <span> Weather description </span>
           </div>
           <form id="search-form">
             <div class="d-flex justify-content-center">
@@ -104,21 +109,22 @@
       </div>
     </div>
     <footer>
-      
       <a
         class="GithubLink"
         href="https://github.com/yeranik/weather-app"
         target="_blank"
       >
-      Open-source code
-      <a
-        class="Instagram"
-        href="https://www.instagram.com/yerani_k/?hl=es-la"
-        target="_blank"
-      >
-        <strong> by Yerani Kingston</strong></a
-      >
+        Open-source code
+        <a
+          class="Instagram"
+          href="https://www.instagram.com/yerani_k/?hl=es-la"
+          target="_blank"
+        >
+          <strong> by Yerani Kingston</strong></a
+        >
+
+        <script src="src/index.js"></script>
+      </a>
     </footer>
-    <script src="src/index.js"></script>
   </body>
 </html>

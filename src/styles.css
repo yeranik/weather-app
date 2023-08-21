@@ -5,8 +5,7 @@ h4 {
   display: block;
   color: white;
 }
-h1,
-h2 {
+h1 {
   font-size: large;
   text-align: center;
   position: relative;
@@ -25,6 +24,23 @@ footer {
   color: black;
   text-align: center;
   position: relative;
+}
+.temperature {
+  text-align: center;
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 34px;
+  line-height: 48px;
+  margin: 0;
+}
+.conversion {
+  text-align: center;
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 20px;
+  margin: 0;
 }
 .container {
   padding: 40px;
@@ -70,4 +86,14 @@ footer {
 .GithubLink:hover {
   text-decoration: underline;
   color: black;
+}
+
+.active {
+  color: white;
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: underline;
 }
