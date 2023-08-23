@@ -20,10 +20,17 @@ function showTemperature(response) {
   let temp = Math.round(response.data.temperature.current);
   let tempElement = document.querySelector("#temp");
   let description = document.querySelector("#des");
+  let windSpeed = document.querySelector("#wind-Speed");
+  let iconElement = document.querySelector("#icon-Main");
 
   celsiusTemperature = response.data.temperature.current;
   tempElement.innerHTML = `${temp}`;
   description.innerHTML = response.data.condition.description;
+  windSpeed.innerHTML = response.data.wind.speed;
+  iconElement.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+  );
 }
 function search(event) {
   event.preventDefault();
